@@ -1,8 +1,10 @@
-import './App.css';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import 'antd/dist/antd.css'
+import './App.css'
+import {BrowserRouter as Router,Switch,Route,Link,useParams} from "react-router-dom";
 import Home from './components/homePage'
 import Login from './components/loginPage'
 import Register from './components/registerPage'
+import Match from './components/matchPage'
 function App() {
   return (
     <>
@@ -16,6 +18,9 @@ function App() {
           </Route>
           <Route path="/register">
             <Register />
+          </Route>
+          <Route path="/match/:matchid">
+            <Match />
           </Route>
         </Switch>
       </Router>
