@@ -1,13 +1,41 @@
-import React from 'react'
+import {} from 'antd';
 import { useParams } from "react-router-dom";
-function Match(){
-    // let { matchid } = useParams();
+import './style.css'
+import $ from "jquery"
+import Player from '../playerCard'
+
+export default function Match(){
+    let { id } = useParams();
+    function handleSelect(id){
+        $('#'+id).toggleClass('selected')
+    }
     return(
         <>
-            {/* Write  your code here */}
-            <h1>Make your team g</h1>
-
+            <h1>Select your dream team</h1>
+            <div className="players-board">
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+                <Player id={id} handleSelect={handleSelect}/>
+            </div>
         </>
     );
 }
-export default Match
