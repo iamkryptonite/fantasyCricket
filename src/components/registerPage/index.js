@@ -106,13 +106,16 @@ class Register extends React.Component {
                   <Checkbox>Remember me</Checkbox>
                 </Form.Item>
                 <Form.Item {...tailLayout}>
-                  <Button type="primary" htmlType="submit">Sign up</Button>
+                  <Space>
+                    <Button type="primary" htmlType="submit">Sign up</Button>
+                    <Button type="primary" href="/login">Existing user? Click here</Button>
+                  </Space>
                 </Form.Item>
                 <Divider/>
                 <Form.Item {...tailLayout}>
                   <Space direction="vertical">
-                      <Button type="primary">Register with Facebook</Button>
-                      <Button type="primary" href="/login">Existing user? Click here</Button>
+                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+                    <div id="my-signin2"></div>
                   </Space>
                 </Form.Item>
               </Form>
