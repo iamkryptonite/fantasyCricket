@@ -1,4 +1,5 @@
 import './App.css';
+import 'antd/dist/antd.css';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import Home from './components/homePage'
 import Login from './components/loginPage'
