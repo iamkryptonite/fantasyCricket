@@ -1,0 +1,17 @@
+.bg{
+    background-image:  url('https://wallpapercave.com/wp/wp2686809.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size:100% 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.match-card{
+    color: rgb(255, 254, 254) !important;
+    background-color:rgba(60,60,60,0.55) !important;
+    font-size: 2vw;
+    text-align: center;
+    justify-items: center;
+}

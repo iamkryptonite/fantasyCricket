@@ -1,22 +1,4 @@
-.or{
-    font-weight : bold;
-    font-size: 20px;
-    align-items: center;
-    margin : 20px auto
-    
-}
-
 .div1{
-    margin-top: 10vh;
-    align-items: right;
+    padding-top:15vh;
 }
 
-h1{
-color: azure;
-text-align: left;
-}
-
-Button{
-
-margin: 10px !important;
-}

@@ -1,25 +1,2 @@
-.menu{
-    float : right;
-    background-color : 'white !important'; 
-}
-.bg{
-    background-image:  url('https://wallpapercave.com/wp/wp2686809.jpg');
-    background-repeat: no-repeat;
-   
-    height: 100vh;
-    background-size:100% 100%;
-    
-    align-items: center;
 
-}
-.card{
-    
-    align-items: center;
-    color: rgb(255, 254, 254);
-    background-color:rgba(60,60,60,0.55);
-    /* display:flex; */
-    margin :40px auto ;
-    font-size: 2vw;
-    text-align: center;
-    text-decoration-color: azure; 
-}
+

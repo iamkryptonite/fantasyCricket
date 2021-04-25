@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import './style.css'
 import $ from "jquery"
 import Player from '../playerCard'
+import { Content } from 'antd/lib/layout/layout';
 
 export default function Match(){
     let { id } = useParams();
@@ -21,7 +22,7 @@ export default function Match(){
         }
     }
     return(
-        <>
+        <Content style={{ padding: '10px 50px',height:'100vh' }}>
             <div className="team-select-options">
                 <h1>Select your dream team</h1>
                 <button className="btn btn-success continue" disabled>Continue</button>
@@ -50,6 +51,6 @@ export default function Match(){
                 <Player id={id} handleSelect={handleSelect}/>
                 <Player id={id} handleSelect={handleSelect}/>
             </div>
-        </>
+        </Content>
     );
 }

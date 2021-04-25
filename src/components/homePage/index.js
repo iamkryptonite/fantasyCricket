@@ -1,32 +1,38 @@
 import React from 'react'
-import { Layout, Menu, Card } from 'antd';
+import { Layout} from 'antd';
 import './style.css'
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import Matches from '../matchesPage'
+import PlayerSelect from '../playerSelectPage'
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content} = Layout;
 class Home extends React.Component {
-    render() {
-      return(
-        <>
-          <Layout className="layout">
-    <Header>
-     
-     
-      <Menu className="menu" theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-        <Menu.Item key="1">REGISTER  <a href="/register"></a></Menu.Item>
-        <Menu.Item key="2">LOGIN <a href="/login"></a></Menu.Item>
-       </Menu>
-    </Header>
-   
-    
-    <div className="bg">
-      <Card className="card" style={{ width: 1000 }}>
-        <p>Team 1 vs Team 2 </p>
-        
-  </Card></div>
-    <Footer style={{ textAlign: 'center' }}></Footer>
-  </Layout>
-          </>
-      );
-    }
+  render() {
+    return(
+      <>
+        <Layout className="layout">
+          <Header>
+            <div className="logo">Fantasy Cricket</div>
+            <div className="authenticte-group">
+              <a href="/login"><button className="btn btn-outline-light">Login</button></a>
+              <a href="/register"><button className="btn btn-outline-light">Register</button></a>
+            </div>
+          </Header>
+          <Content>
+            <Router>
+              <Switch>
+                <Route path="/" exact>
+                  <Matches/>
+                </Route>
+                <Route path="/matches/:id">
+                  <PlayerSelect/>
+                </Route>
+              </Switch>
+            </Router>
+          </Content>
+        </Layout>
+      </>
+    );
   }
+}
 export default Home
