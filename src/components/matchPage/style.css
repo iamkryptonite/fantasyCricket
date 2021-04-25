@@ -3,3 +3,10 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.team-select-options{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    margin: 10px;
+}
