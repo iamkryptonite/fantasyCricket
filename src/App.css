@@ -1,0 +1,16 @@
+.authenticte-group{
+    float: right;
+}
+.ant-layout-header{
+    background-color: #dc3545 !important;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    border-radius: 0 !important;
+}
+.logo{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+}
