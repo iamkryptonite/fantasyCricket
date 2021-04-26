@@ -1,5 +1,6 @@
+import React from 'react'
 import { Form , Input , Button , Checkbox , Space , Divider } from 'antd';
-export default function RegisterForm(){
+function RegisterForm(){
     const layout = {
         labelCol: {
           span: 8,
@@ -92,3 +93,4 @@ export default function RegisterForm(){
         </div>
     )
 }
+export default React.memo(RegisterForm)

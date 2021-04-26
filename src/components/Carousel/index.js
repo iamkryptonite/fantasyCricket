@@ -1,5 +1,6 @@
+import React from 'react'
 import { Carousel } from 'antd';
-export default function ImageCarousel(){
+export default React.memo(function ImageCarousel(){
     const contentStyle = {
         height: '100vh',
         color: '#fff',
@@ -21,4 +22,4 @@ export default function ImageCarousel(){
               </div>
         </Carousel>
     )
-}
+})
