@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-y: hidden ;
 }
 .match-card{
     color: rgb(255, 254, 254) !important;
@@ -14,4 +15,25 @@
     font-size: 2vw;
     text-align: center;
     justify-items: center;
+    margin: 10px !important;
+}
+.scroller{
+    overflow-y: scroll;
+    height: 80vh;
+}
+.scroller::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.scroller::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
 }
