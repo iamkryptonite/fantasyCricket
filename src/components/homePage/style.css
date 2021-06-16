@@ -1,2 +1,25 @@
-
+.bg{
+    background-image:  url('../../assets/thumb.jpg');
+    background-repeat: no-repeat;
+    object-fit:inherit;
+    height: 50vh;
+    background-size:100% 100%;
+    display: grid;
+    place-items: center;
+    z-index: -1;
+}
+.ant-layout-content{
+    padding: 30px 15rem;
+}
+.ant-layout-footer{
+    height: 40vh;
+    width: 100%;
+    background: rgb(10, 8, 8) !important;
+    bottom: 0;
+    color: #fff !important;
+}
+.bg h1{
+    font-size: 5rem;
+    color: #fff;
+}
 

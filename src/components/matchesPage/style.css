@@ -1,25 +1,24 @@
-.bg{
-    background-image:  url('https://wallpapercave.com/wp/wp2686809.jpg');
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-size:100% 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-y: hidden ;
+.matches{
+    /* background: rgb(197, 197, 197) !important; */
+    /* display: flex; */
 }
 .match-card{
-    color: rgb(255, 254, 254) !important;
-    background-color:rgba(60,60,60,0.55) !important;
-    font-size: 2vw;
+    color: rgb(0, 0, 0) !important;
+    background-color:rgb(255, 255, 255) !important;
+    width: 400px;
+    font-size: 10px;
     text-align: center;
-    justify-items: center;
     margin: 10px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 .scroller{
-    overflow-y: scroll;
-    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* overflow-y: scroll; */
+    /* height: 80vh; */
 }
 .scroller::-webkit-scrollbar-track
 {
@@ -35,5 +34,5 @@
 
 .scroller::-webkit-scrollbar-thumb
 {
-	background-color: #000000;
+	background-color: #575757;
 }

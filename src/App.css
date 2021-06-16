@@ -3,11 +3,13 @@
 }
 .ant-layout-header{
     background-color: #dc3545 !important;
+    /* background:transparent; */
     display: flex;
     justify-content: space-between;
 }
 .btn{
     border-radius: 0 !important;
+    margin: 2px;
 }
 .logo{
     color:#fff;
